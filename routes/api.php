@@ -13,4 +13,4 @@ Route::post('cadastrarProduto', [ProdutoController::class, 'store']);
 
 //Cliente
 Route::get('clienteIndex', [ClienteController::class, 'Index']); 
-Route::post('cadastrarCliente', [ProdutoController::class, 'Store']); 
+Route::post('cadastrarCliente', [ClienteController::class, 'Store']); 
