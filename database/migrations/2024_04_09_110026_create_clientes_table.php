@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nome',80)->nullable(false);
             $table->string('telefone',11)->nullable(false);
             $table->string('endereco',50)->unique()->nullable(false);
-            $table->string('email',)->unique()->nullable(false);
+            $table->string('email',)()->nullable(false);
             $table->string('password')->unique()->nullable(false);
             $table->string('imagem')->nullable(false);
             $table->timestamps();
