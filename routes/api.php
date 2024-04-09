@@ -1,8 +1,16 @@
 <?php
 
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ProdutoController;
+use App\Models\Produto;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+//produto
+Route::get('produtoIndex', [ProdutoController::class, 'Index']); 
+Route::post('cadastrarProduto', [ProdutoController::class, 'store']); 
+
+
+//Cliente
+Route::get('clienteIndex', [ClienteController::class, 'Index']); 
+Route::post('cadastrarCliente', [ProdutoController::class, 'Store']); 
